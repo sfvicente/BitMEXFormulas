@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29613.14
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BitMEXFormulas.Application", "BitMEXFormulas.Application\BitMEXFormulas.Application.csproj", "{FD08DC0E-289A-4F44-8779-E2785407696B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BitMEXFormulas.Application", "BitMEXFormulas.Application\BitMEXFormulas.Application.csproj", "{FD08DC0E-289A-4F44-8779-E2785407696B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BitMEXFormulas.Common", "BitMEXFormulas.Common\BitMEXFormulas.Common.csproj", "{622CA2AC-39A7-48C8-83BC-0EF7EC7181AA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{FD08DC0E-289A-4F44-8779-E2785407696B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FD08DC0E-289A-4F44-8779-E2785407696B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FD08DC0E-289A-4F44-8779-E2785407696B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{622CA2AC-39A7-48C8-83BC-0EF7EC7181AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{622CA2AC-39A7-48C8-83BC-0EF7EC7181AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{622CA2AC-39A7-48C8-83BC-0EF7EC7181AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{622CA2AC-39A7-48C8-83BC-0EF7EC7181AA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
