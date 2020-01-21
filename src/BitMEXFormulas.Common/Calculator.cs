@@ -2,7 +2,8 @@
 
 namespace BitMEXFormulas.Common
 {
-    public class Class1
+    public class Calculator
     {
+
     }
 }
