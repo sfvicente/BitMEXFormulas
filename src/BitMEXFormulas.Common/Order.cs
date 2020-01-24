@@ -23,5 +23,7 @@ namespace BitMEXFormulas.Common
         /// The price where your stoploss is
         /// </summary>
         decimal stoplossPrice;
+
+        decimal estimatedLiquidationPrice;
     }
 }

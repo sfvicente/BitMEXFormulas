@@ -39,5 +39,7 @@ namespace BitMEXFormulas.Common
         decimal stoplossPrice;
 
         decimal averagePrice;
+
+        decimal estimatedLiquidationPrice;
     }
 }
