@@ -6,40 +6,40 @@ namespace BitMEXFormulas.Common
 {
     public class LadderOrder
     {
-        string instrument;
+        public string Instrument;
 
         /// <summary>
         /// The price you entered at(or the average)
         /// </summary>
-        decimal startEntryPrice;
+        public decimal StartEntryPrice;
 
         /// <summary>
         /// The end of the price you entered at(or the average)
         /// </summary>
-        decimal endEntryPrice;
+        public decimal EndEntryPrice;
 
 
         /// <summary>
         /// Order quantity in units of the instrument (i.e. contracts).
         /// </summary>
-        int amount;
+        public int Amount;
 
-        int orderCount;
+        public int OrderCount;
 
-        int OrderSizeIncreasePercentage;
+        public int OrderSizeIncreasePercentage;
 
         /// <summary>
         /// The amount of leverage used for the order
         /// </summary>
-        int leverage;
+        public int Leverage;
 
         /// <summary>
         /// The price where your stoploss is
         /// </summary>
-        decimal stoplossPrice;
+        public decimal StoplossPrice;
 
-        decimal averagePrice;
+        public decimal AveragePrice;
 
-        decimal estimatedLiquidationPrice;
+        public decimal EstimatedLiquidationPrice;
     }
 }
