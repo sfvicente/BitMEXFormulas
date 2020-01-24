@@ -6,10 +6,10 @@ namespace BitMEXFormulas.Common
 {
     public class Account
     {
-        decimal walletBalance;
+        public decimal WalletBalance { set; get; }
 
-        decimal marginBalance;
+        public decimal MarginBalance { set; get; }
 
-        decimal availableBalance;
+        public decimal AvailableBalance { set; get; }
     }
 }
