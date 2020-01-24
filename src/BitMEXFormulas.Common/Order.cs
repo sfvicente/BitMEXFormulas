@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace BitMEXFormulas.Common
+﻿namespace BitMEXFormulas.Common
 {
     public class Order
     {

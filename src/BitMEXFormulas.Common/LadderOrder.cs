@@ -4,7 +4,7 @@ using System.Text;
 
 namespace BitMEXFormulas.Common
 {
-    class LadderOrder
+    public class LadderOrder
     {
         string instrument;
 

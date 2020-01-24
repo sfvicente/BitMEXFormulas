@@ -4,7 +4,7 @@ using System.Text;
 
 namespace BitMEXFormulas.Common
 {
-    class Account
+    public class Account
     {
         decimal walletBalance;
 

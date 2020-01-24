@@ -4,7 +4,7 @@ using System.Text;
 
 namespace BitMEXFormulas.Common
 {
-    class OrderRiskAssessment
+    public class OrderRiskAssessment
     {
         decimal Risk;
 
