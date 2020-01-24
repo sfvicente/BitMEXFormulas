@@ -5,23 +5,23 @@
         /// <summary>
         /// The price you entered at(or the average)
         /// </summary>
-        decimal entryPrice;
+        public decimal EntryPrice;
 
         /// <summary>
         /// Order quantity in units of the instrument (i.e. contracts).
         /// </summary>
-        int amount;
+        public int Amount;
 
         /// <summary>
         /// The amount of leverage used for the order
         /// </summary>
-        int leverage;
+        public int Leverage;
 
         /// <summary>
         /// The price where your stoploss is
         /// </summary>
-        decimal stoplossPrice;
+        public decimal StoplossPrice;
 
-        decimal estimatedLiquidationPrice;
+        public decimal EstimatedLiquidationPrice;
     }
 }
