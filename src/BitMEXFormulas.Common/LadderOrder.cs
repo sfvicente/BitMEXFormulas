@@ -43,5 +43,13 @@ namespace BitMEXFormulas.Common
         public decimal AveragePrice;
 
         public decimal EstimatedLiquidationPrice;
+
+
+        public List<Order> CreateOrderItems()
+        {
+            var orderItems = new List<Order>();
+
+            return orderItems;
+        }
     }
 }
