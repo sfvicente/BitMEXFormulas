@@ -28,6 +28,8 @@ namespace BitMEXFormulas.Common
 
         public int OrderSizeIncreasePercentage;
 
+        public ScaledOrderDistribution ScaledOrderDistribution;
+
         /// <summary>
         /// The amount of leverage used for the order
         /// </summary>
