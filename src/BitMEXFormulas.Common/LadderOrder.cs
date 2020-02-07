@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace BitMEXFormulas.Common
@@ -48,6 +49,61 @@ namespace BitMEXFormulas.Common
         public List<Order> CreateOrderItems()
         {
             var orderItems = new List<Order>();
+
+            return orderItems;
+        }
+
+        public IEnumerable<Order> CreateFlatOrderItems()
+        {
+            // ToDo: Validate arguments
+
+            if (OrderCount == 1)
+            {
+                return Enumerable.Empty<Order>();
+            }
+
+            var orderItems = new List<Order>();
+
+            if (OrderCount == 2)
+            {
+                orderItems.Add(new Order()
+                {
+                    EntryPrice = this.StartEntryPrice,
+                    Amount = this.Amount / 2,
+                    Leverage = this.Leverage,
+                    StoplossPrice = this.StoplossPrice
+                });
+
+                orderItems.Add(new Order()
+                {
+                    EntryPrice = this.EndEntryPrice,
+                    Amount = this.Amount / 2,
+                    Leverage = this.Leverage,
+                    StoplossPrice = this.StoplossPrice
+                });
+
+                return orderItems;
+            }
+
+            if (OrderCount > 2)
+            {
+                decimal intervalSize = (StartEntryPrice + EndEntryPrice);
+                decimal chunkSize = intervalSize / (OrderCount - 2);
+                int orderItemAmount = this.Amount / OrderCount;
+
+                for(int i = 0; i < this.OrderCount; i++)
+                {
+                    Order orderItem = new Order()
+                    {
+                        EntryPrice = StartEntryPrice + (chunkSize * i),
+                        StoplossPrice = this.StoplossPrice,
+                        Amount = orderItemAmount,
+                        Leverage = this.Leverage,
+                    };
+
+                    orderItems.Add(orderItem);
+                }
+            }
 
             return orderItems;
         }
