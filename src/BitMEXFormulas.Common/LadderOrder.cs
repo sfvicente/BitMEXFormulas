@@ -87,8 +87,8 @@ namespace BitMEXFormulas.Common
 
             if (OrderCount > 2)
             {
-                decimal intervalSize = (StartEntryPrice + EndEntryPrice);
-                decimal chunkSize = intervalSize / (OrderCount - 2);
+                decimal intervalSize = (EndEntryPrice - StartEntryPrice);
+                decimal chunkSize = intervalSize / (OrderCount - 1);
                 int orderItemAmount = this.Amount / OrderCount;
 
                 for(int i = 0; i < this.OrderCount; i++)
