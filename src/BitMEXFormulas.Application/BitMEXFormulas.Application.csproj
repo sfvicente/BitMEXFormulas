@@ -5,4 +5,8 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\BitMEXFormulas.Common\BitMEXFormulas.Common.csproj" />
+  </ItemGroup>
+
 </Project>
