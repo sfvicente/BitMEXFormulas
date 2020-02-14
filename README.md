@@ -74,7 +74,7 @@ floor 0.05
 #### Leverage
 
 **Long Entry**
-> Leverage = 1 / (-LiquidationPrice / EntryPrice + 1.0101)
+> Leverage = Math.Floor((-1.0015) / ((LiquidationPrice / EntryPrice) - 1.0015 - 0,01))
 
 **Short Entry**
 > Leverage = 1 / (LiquidationPrice / EntryPrice - 0.99)
